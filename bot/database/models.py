@@ -43,8 +43,6 @@ class ProductModel(Base):
         back_populates="product"
     )
 
-    # __table_args__ = (Index("ix_updated_by", "updated_by", unique=True),)
-
     def __str__(self) -> str:
         return self.name
 
@@ -53,6 +51,9 @@ class ProductModel(Base):
             f"Product(article={self.article}, name={self.name!r},"
             f" price={self.price!r}, sale_price={self.sale_price!r})"
         )
+
+    class Meta:
+        order_by = ["-updated_by"]
 
 
 class SubscriptionModel(Base):
