@@ -1,5 +1,5 @@
 # wildberries_bot
-Телеграм-бот для парсинга товаров с Wildberries, созданный для личных целей.
+Телеграм-бот для парсинга товаров с Wildberries.
 Реализована система подписки на товар, а также использовано интересное решение на aiogram_dialog для пагинации.
 ### Использованные технологии:
 Aiogram, aiogram_dialog, SQLAlchemy, Alembic, PostgreSQL, Redis, apschluder, Docker-compose, WebHooks, Nginx, Certbot для получения сертификата от Let`s Encrypt
